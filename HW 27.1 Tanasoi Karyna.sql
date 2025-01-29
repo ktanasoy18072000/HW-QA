@@ -16,7 +16,16 @@ add initialMilleage int not null,
 add userId int not null,
 add foreign key (userId) references users(id) ;
 
-select* from car_brands;
+insert into car_brands (title)
+values
+('Tesla'),
+('BMW'),
+('Opel'),
+('Nissan');
+
+select* from car_brands
+
+
 
 insert into car_models (carbrandID, title)
 values
